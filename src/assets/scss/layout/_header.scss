@@ -1,9 +1,3 @@
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 /* Header */
 
 #header {
@@ -62,18 +56,12 @@
     }
   }
 
-  .logo {
-    width: 5.5rem;
-    height: 5.5rem;
-    line-height: 5.5rem;
+  img {
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
     border: solid _size(border-width) _palette(border);
-    border-radius: 100%;
-
-    .icon {
-      &:before {
-        font-size: 2rem;
-      }
-    }
+    border-radius: 50%;
   }
 
   .content {
@@ -218,11 +206,11 @@
     }
 
     .logo {
-      width: 4.75rem;
-      height: 4.75rem;
-      line-height: 4.75rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      line-height: 2.75rem;
 
-      .icon {
+      img {
         &:before {
           font-size: 1.75rem;
         }
