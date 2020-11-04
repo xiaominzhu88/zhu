@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pres from '../images/pres.jpg'
 import fan from '../images/fan.png'
+import NextJsProjects from './NextJsProjects'
+import ReactProjects from './ReactProjects'
 
 function Main({
   onCloseArticle,
@@ -13,6 +15,9 @@ function Main({
 }) {
   let close = <div className="close" onClick={() => onCloseArticle()}></div>
 
+  const onClick = () => {
+    console.log('clicked!')
+  }
   return (
     <div
       ref={setWrapperRef}
@@ -33,7 +38,7 @@ function Main({
           </span>
         </h2>
         <span className="image main">
-          <img src={pres} alt="" />
+          <img src={pres} alt="work" onClick={onClick} />
         </span>
         <p>
           I'm at the beginning of this exciting development journey and I
@@ -41,6 +46,9 @@ function Main({
           I've included some of my recently web application projects here.
         </p>
         {close}
+        <div>
+          <NextJsProjects />
+        </div>
       </article>
 
       <article

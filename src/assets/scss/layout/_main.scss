@@ -92,7 +92,15 @@
       }
     }
   }
-
+  // img {
+  //   cursor: pointer;
+  //   &:hover {
+  //     opacity: 0.4;
+  //     transition: 0.6s all ease-in-out;
+  //     transform: scale(0.95);
+  //     box-shadow: 0px 1px 2px rgb(139, 139, 139);
+  //   }
+  // }
   @include breakpoint(small) {
     article {
       @include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
