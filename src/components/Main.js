@@ -14,10 +14,18 @@ function Main({
   articleTimeout,
 }) {
   let close = <div className="close" onClick={() => onCloseArticle()}></div>
+  const [reactDisplay, setReactDisplay] = React.useState(false)
+  const [nextDisplay, setNextDisplay] = React.useState(false)
 
-  const onClick = () => {
-    console.log('clicked!')
+  const showReact = () => {
+    setReactDisplay(!reactDisplay)
+    setNextDisplay(false)
   }
+  const showNext = () => {
+    setNextDisplay(!nextDisplay)
+    setReactDisplay(false)
+  }
+
   return (
     <div
       ref={setWrapperRef}
@@ -38,17 +46,38 @@ function Main({
           </span>
         </h2>
         <span className="image main">
-          <img src={pres} alt="work" onClick={onClick} />
+          <img src={pres} alt="work" />
         </span>
         <p>
           I'm at the beginning of this exciting development journey and I
           understand there are lots of improvements. <br />
-          I've included some of my recently web application projects here.
+          I've included some of my simple web application projects here.
         </p>
-        {close}
-        <div>
-          <NextJsProjects />
+
+        <div className="buttons">
+          <button
+            style={{
+              backgroundColor: reactDisplay && '#c9e634',
+            }}
+            onClick={showReact}
+          >
+            React Projects
+          </button>
+          <button
+            style={{
+              backgroundColor: nextDisplay && 'hotpink',
+            }}
+            onClick={showNext}
+          >
+            NextJS Projects
+          </button>
         </div>
+
+        {nextDisplay && <NextJsProjects />}
+
+        {reactDisplay && <ReactProjects />}
+
+        {close}
       </article>
 
       <article

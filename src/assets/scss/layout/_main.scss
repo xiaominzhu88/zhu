@@ -12,6 +12,13 @@
   z-index: 3;
   display: none;
 
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+  }
+
   article {
     p {
       text-align: center;
