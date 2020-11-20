@@ -54,10 +54,12 @@ function Main({
           I've included some of my simple web application projects here.
         </p>
 
-        <div className="buttons">
+        <div>
           <button
             style={{
               backgroundColor: reactDisplay && '#c9e634',
+              margin: '2rem auto',
+              width: '14rem',
             }}
             onClick={showReact}
           >
@@ -66,6 +68,8 @@ function Main({
           <button
             style={{
               backgroundColor: nextDisplay && 'hotpink',
+              margin: '2rem auto',
+              width: '14rem',
             }}
             onClick={showNext}
           >

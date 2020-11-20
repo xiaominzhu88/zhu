@@ -12,11 +12,8 @@
   z-index: 3;
   display: none;
 
-  .buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2em;
+  button {
+    display: block;
   }
 
   article {
