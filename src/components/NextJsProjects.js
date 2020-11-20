@@ -5,7 +5,7 @@ import movie from '../images/movie.png'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import '/Users/mini/Desktop/zhu/my-site/src/assets/scss/nextJsProjects.scss'
+import '../assets/scss/nextJsProjects.scss'
 
 export default function NextJsProjects() {
   const settings = {
