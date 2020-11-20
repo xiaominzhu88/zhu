@@ -22,14 +22,29 @@ export default function ReactProjects() {
     <div className="projects">
       <Slider {...settings}>
         <div className="card-table">
-          <a
-            href="https://zhu-weather-react.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={weather} alt="todo project" />
-            <header>React weather-app</header>
-          </a>
+          <div className="card-table">
+            <a
+              href="https://videoplayer-zhu.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={videoPlayer} alt="video project" />
+              <header>React video player</header>
+            </a>
+          </div>
+        </div>
+
+        <div className="card-table">
+          <div className="card-table">
+            <a
+              href="https://meme-generator-zhu.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={meme} alt="countdown project" />
+              <header>React meme-generator</header>
+            </a>
+          </div>
         </div>
 
         <div className="card-table">
@@ -76,30 +91,7 @@ export default function ReactProjects() {
             </a>
           </div>
         </div>
-        <div className="card-table">
-          <div className="card-table">
-            <a
-              href="https://meme-generator-zhu.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={meme} alt="countdown project" />
-              <header>React meme-generator</header>
-            </a>
-          </div>
-        </div>
-        <div className="card-table">
-          <div className="card-table">
-            <a
-              href="https://videoplayer-zhu.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={videoPlayer} alt="video project" />
-              <header>React video player</header>
-            </a>
-          </div>
-        </div>
+
         <div className="card-table">
           <div className="card-table">
             <a

@@ -61,7 +61,7 @@ function Main({
             }}
             onClick={showReact}
           >
-            React Projects
+            Simple React
           </button>
           <button
             style={{
@@ -69,7 +69,7 @@ function Main({
             }}
             onClick={showNext}
           >
-            NextJS Projects
+            NextJs Projects
           </button>
         </div>
 
@@ -109,32 +109,38 @@ function Main({
         style={{ display: 'none' }}
       >
         <h2 className="major">
-          Contact{' '}
+          Contact Me{' '}
           <span role="img" aria-label="emoji">
             💛
           </span>
         </h2>
-        <form method="post" action="#">
+        <form>
           <div className="field half first">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Xiaomin Zhu"
+            />
           </div>
           <div className="field half">
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="https://github.com/xiaominzhu88"
+            />
           </div>
           <div className="field">
-            <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" rows="4"></textarea>
+            <label htmlFor="message">Thank you</label>
+            <textarea name="message" id="message" rows="4">
+              I love exploring the natural beauty of our planet through bike
+              rides along the coastline of the ocean or visiting the world’s
+              most fascinating cities. Want to start a new journey with me？
+            </textarea>
           </div>
-          <ul className="actions">
-            <li>
-              <input type="submit" value="Send Message" className="special" />
-            </li>
-            <li>
-              <input type="reset" value="Reset" />
-            </li>
-          </ul>
         </form>
         <ul className="icons">
           <li>
