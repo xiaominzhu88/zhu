@@ -126,6 +126,7 @@ function Main({
               name="name"
               id="name"
               placeholder="Xiaomin Zhu"
+              disabled
             />
           </div>
           <div className="field half">
@@ -135,11 +136,12 @@ function Main({
               name="email"
               id="email"
               placeholder="https://github.com/xiaominzhu88"
+              disabled
             />
           </div>
           <div className="field">
             <label htmlFor="message">Thank you</label>
-            <textarea name="message" id="message" rows="4">
+            <textarea name="message" id="message" rows="4" disabled>
               I love exploring the natural beauty of our planet through bike
               rides along the coastline of the ocean or visiting the world’s
               most fascinating cities. Want to start a new journey with me？
