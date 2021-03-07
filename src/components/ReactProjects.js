@@ -1,7 +1,7 @@
 import React from 'react'
 import todo from '../images/todo.png'
 import countdown from '../images/countdown.png'
-import randomColor from '../images/randomColor.png'
+import covid from '../images/covid-screenshot.png'
 import friends from '../images/friends.png'
 import meme from '../images/meme.png'
 import videoPlayer from '../images/videoplayer.png'
@@ -21,31 +21,35 @@ export default function ReactProjects() {
     <div className="projects">
       <Slider {...settings}>
         <div className="card-table">
-          <div className="card-table">
-            <a
-              href="https://videoplayer-zhu.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={videoPlayer} alt="video project" />
-              <header>React video player</header>
-            </a>
-          </div>
+          <a
+            href="https://covid-19-view.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={covid} alt="todo project" />
+            <header>React Covid-19 Tracking</header>
+          </a>
         </div>
-
         <div className="card-table">
-          <div className="card-table">
-            <a
-              href="https://meme-generator-zhu.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={meme} alt="countdown project" />
-              <header>React meme-generator</header>
-            </a>
-          </div>
+          <a
+            href="https://videoplayer-zhu.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={videoPlayer} alt="video project" />
+            <header>React Video player</header>
+          </a>
         </div>
-
+        <div className="card-table">
+          <a
+            href="https://meme-generator-zhu.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={meme} alt="countdown project" />
+            <header>React meme generator</header>
+          </a>
+        </div>
         <div className="card-table">
           <a
             href="https://react-friends-co.netlify.app/"
@@ -53,18 +57,7 @@ export default function ReactProjects() {
             rel="noopener noreferrer"
           >
             <img src={friends} alt="todo project" />
-            <header>React friends-app</header>
-          </a>
-        </div>
-
-        <div className="card-table">
-          <a
-            href="https://react-random-color.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={randomColor} alt="todo project" />
-            <header>React random-color-generator</header>
+            <header>React Friends</header>
           </a>
         </div>
 
@@ -75,7 +68,7 @@ export default function ReactProjects() {
             rel="noopener noreferrer"
           >
             <img src={todo} alt="todo project" />
-            <header>React todo-app</header>
+            <header>React Basic Todo </header>
           </a>
         </div>
         <div className="card-table">
@@ -86,7 +79,7 @@ export default function ReactProjects() {
               rel="noopener noreferrer"
             >
               <img src={countdown} alt="countdown project" />
-              <header>React countdown-timer</header>
+              <header>React Countdown Timer</header>
             </a>
           </div>
         </div>
@@ -99,7 +92,7 @@ export default function ReactProjects() {
               rel="noopener noreferrer"
             >
               <img src={markdown} alt="video project" />
-              <header>React markdown previewer</header>
+              <header>React Markdown Previewer</header>
             </a>
           </div>
         </div>
